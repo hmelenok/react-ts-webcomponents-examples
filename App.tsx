@@ -5,7 +5,11 @@ import './style.css';
 import './web-components/hello-world';
 import './web-components/counter-wc';
 import './web-components/expand-wc';
-import { FastCard } from './fast-components/index';
+import {
+  FastCard,
+  FastButton,
+  FastAccordeonItem,
+} from './fast-components/index';
 
 declare global {
   namespace JSX {
