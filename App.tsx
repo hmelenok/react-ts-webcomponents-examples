@@ -5,6 +5,7 @@ import './style.css';
 import './web-components/hello-world';
 import './web-components/counter-wc';
 import './web-components/expand-wc';
+import { FastCard } from './fast-components/index';
 
 declare global {
   namespace JSX {
@@ -57,11 +58,15 @@ export default function App() {
       <hr />
       <h2>Fast + React</h2>
       <expand-wc>
-      <FastCard>
+        <FastCard>
           <h2>FAST React</h2>
-          <FastButton appearance="accent" onClick={() => console.log("clicked")}>Click Me</FastButton>
-      </FastCard>
-
+          <FastButton
+            appearance="accent"
+            onClick={() => console.log('clicked')}
+          >
+            Click Me
+          </FastButton>
+        </FastCard>
       </expand-wc>
     </div>
   );
