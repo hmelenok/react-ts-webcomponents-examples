@@ -9,6 +9,7 @@ import {
   FastCard,
   FastButton,
   FastAccordeonItem,
+  FastAccordeon,
 } from './fast-components/index';
 
 declare global {
@@ -61,17 +62,19 @@ export default function App() {
       </expand-wc>
       <hr />
       <h2>Fast + React</h2>
-      <expand-wc>
-        <FastCard>
-          <h2>FAST React</h2>
-          <FastButton
-            appearance="accent"
-            onClick={() => console.log('clicked')}
-          >
-            Click Me
-          </FastButton>
-        </FastCard>
-      </expand-wc>
+      <FastAccordeon>
+        <FastAccordeonItem>
+          <FastCard>
+            <h2>FAST React</h2>
+            <FastButton
+              appearance="accent"
+              onClick={() => console.log('clicked')}
+            >
+              Click Me
+            </FastButton>
+          </FastCard>
+        </FastAccordeonItem>
+      </FastAccordeon>
     </div>
   );
 }
