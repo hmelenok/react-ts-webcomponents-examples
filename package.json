@@ -3,12 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@types/react": "^18.0.8",
-    "@types/react-dom": "^18.0.2",
-    "@microsoft/fast-components": "2.30.6",
-    "@microsoft/fast-react-wrapper": "0.3.12",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
